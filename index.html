@@ -115,6 +115,7 @@ span.rounded {
 </style>
 </head>
 <body>
+<div id="checkhide">
 <div class="app1">
     <center><h1 style="color:#1E3915;">Leader Board</h1></center>
   <ul class="ha full" id="sclr1">
@@ -126,8 +127,13 @@ span.rounded {
     <li class="item"><span id="rounded5"></span><center><p id="sixth6"></p></center></li>
   </ul>
 </div>
+</div>
 <script>
 var myObj, x,y,i,z;
+document.getElementById('checkhide').style.display = 'block';
+if(window.location.href == 'https://prabha-coder.github.io/leaderboard/') {
+  document.getElementById('checkhide').style.display = 'none';
+}
 var proxy = 'https://cors-anywhere.herokuapp.com/';
 $(document).ready(function(){
     $.getJSON(proxy +"https://forum.amarantos.org/directory_items.json?order=likes_received&period=monthly", function(data, status){
