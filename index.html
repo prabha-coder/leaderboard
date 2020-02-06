@@ -86,7 +86,6 @@ span.rounded {
 </style>
 </head>
 <body>
-<p id="OutData"></p>
 <div class="app1">
     <center><h1>Leader Board</h1></center>
   <ul class="ha full" id="sclr1">
@@ -99,7 +98,7 @@ span.rounded {
   </ul>
 </div>
 <script>
-var myObj, x,y,i,z,AData;
+var myObj, x,y,i,z;
 var proxy = 'https://cors-anywhere.herokuapp.com/';
 $(document).ready(function(){
     $.getJSON(proxy +"https://forum.amarantos.org/directory_items.json?order=likes_received&period=monthly", function(data, status){
