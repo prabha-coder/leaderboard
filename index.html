@@ -47,7 +47,7 @@ ul {
   padding: 0;
 }
 .app1 {
-  background: #DAF7A6;
+  
   margin-bottom:20px;
  
 
@@ -86,15 +86,16 @@ span.rounded {
 </style>
 </head>
 <body>
+<p id="OutData"></p>
 <div class="app1">
-    <center><h1>Leader Board</h1></center>
+    <center><h1 style="Color:#1E3915;">Leader Board</h1></center>
   <ul class="ha full" id="sclr1">
-    <li class="item" style="width: 120px; background: #003366;"><span id="rounded"></span><center><p id="first1"></p></center></li>
-    <li class="item" style="width: 120px; background: #800000;"><span id="rounded1"></span><center><p id="second2"></p></center></li>
-    <li class="item" style="width: 120px; background: #cc0099;"><span id="rounded2"></span><center><p id="third3"></p></center></li>
-    <li class="item" style="width: 120px; background: #003300;"><span id="rounded3"></span><center><p id="fourth4"></p></center></li>
-    <li class="item" style="width: 120px; background: #0033cc;"><span id="rounded4"></span><center><p id="fifth5"></p></center></li>
-    <li class="item" style="width: 120px; background: #009999;"><span id="rounded5"></span><center><p id="sixth6"></p></center></li>
+    <li class="item" style="width: 120px;   background-image: linear-gradient(to bottom, #ffbf00, #fbce48, #f8dc73, #f8e89a, #f9f3c1, #e6e5bd, #d5d7b9, #c5c9b4, #9aa287, #707d5e, #465a38, #1e3915);"><span id="rounded"></span><center><p id="first1"></p></center></li>
+    <li class="item" style="width: 120px;   background-image: linear-gradient(to bottom, #ffbf00, #fbce48, #f8dc73, #f8e89a, #f9f3c1, #e6e5bd, #d5d7b9, #c5c9b4, #9aa287, #707d5e, #465a38, #1e3915);"><span id="rounded1"></span><center><p id="second2"></p></center></li>
+    <li class="item" style="width: 120px;   background-image: linear-gradient(to bottom, #ffbf00, #fbce48, #f8dc73, #f8e89a, #f9f3c1, #e6e5bd, #d5d7b9, #c5c9b4, #9aa287, #707d5e, #465a38, #1e3915);"><span id="rounded2"></span><center><p id="third3"></p></center></li>
+    <li class="item" style="width: 120px;   background-image: linear-gradient(to bottom, #ffbf00, #fbce48, #f8dc73, #f8e89a, #f9f3c1, #e6e5bd, #d5d7b9, #c5c9b4, #9aa287, #707d5e, #465a38, #1e3915);"><span id="rounded3"></span><center><p id="fourth4"></p></center></li>
+    <li class="item" style="width: 120px;   background-image: linear-gradient(to bottom, #ffbf00, #fbce48, #f8dc73, #f8e89a, #f9f3c1, #e6e5bd, #d5d7b9, #c5c9b4, #9aa287, #707d5e, #465a38, #1e3915);"><span id="rounded4"></span><center><p id="fifth5"></p></center></li>
+    <li class="item" style="width: 120px;   background-image: linear-gradient(to bottom, #ffbf00, #fbce48, #f8dc73, #f8e89a, #f9f3c1, #e6e5bd, #d5d7b9, #c5c9b4, #9aa287, #707d5e, #465a38, #1e3915);"><span id="rounded5"></span><center><p id="sixth6"></p></center></li>
   </ul>
 </div>
 <script>
@@ -117,8 +118,8 @@ GFG_Fun();
 function GFG_Fun() {
             var img = new Image();
             img.src = z;
-            document.getElementById('rounded').appendChild(img);
-            document.getElementById('rounded').style = "border-radius: 50%;";			
+            document.getElementById('rounded').appendChild(img).style = "border-radius: 50%;";
+            			
         }  
 }
 if(i==1)
@@ -130,7 +131,7 @@ GFG_Fun();
 function GFG_Fun() {
             var img = new Image();
             img.src = z;
-            document.getElementById('rounded1').appendChild(img); 
+            document.getElementById('rounded1').appendChild(img).style = "border-radius: 50%;"; 
         }  
 }
 if(i==2)
@@ -142,7 +143,7 @@ GFG_Fun();
 function GFG_Fun() {
             var img = new Image();
             img.src = z;
-            document.getElementById('rounded2').appendChild(img); 
+            document.getElementById('rounded2').appendChild(img).style = "border-radius: 50%;"; 
         }  }
 if(i==3)
 {
@@ -153,7 +154,7 @@ GFG_Fun();
 function GFG_Fun() {
             var img = new Image();
             img.src = z;
-            document.getElementById('rounded3').appendChild(img); 
+            document.getElementById('rounded3').appendChild(img).style = "border-radius: 50%;"; 
         }  
 }
 if(i==4)
@@ -165,7 +166,7 @@ GFG_Fun();
 function GFG_Fun() {
             var img = new Image();
             img.src = z;
-            document.getElementById('rounded4').appendChild(img); 
+            document.getElementById('rounded4').appendChild(img).style = "border-radius: 50%;"; 
         }  
 }
 if(i==5)
@@ -177,7 +178,7 @@ GFG_Fun();
 function GFG_Fun() {
             var img = new Image();
             img.src = z;
-            document.getElementById('rounded5').appendChild(img); 
+            document.getElementById('rounded5').appendChild(img).style = "border-radius: 50%;"; 
         }  
 }
 if(i<6)
